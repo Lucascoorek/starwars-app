@@ -1,11 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Section from "./Section";
 
 const Hero = props => {
   return (
-    <section className="hero">
-      <h1>power source</h1>
-    </section>
+    <>
+      <section className="hero">
+        <h1>power source</h1>
+      </section>
+      <Section />
+    </>
   );
 };
 

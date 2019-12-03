@@ -36,11 +36,18 @@ ul {
   color: var(--secondary-color);
   border-bottom: 1px solid var(--secondary-color);
 }
-
+.padding {
+  padding: 5px 15px;
+}
+.my-1 {
+  margin: 20px 0;
+}
 nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 5px 15px;
+
   background: var(--primary-dark);
 }
 .nav-left img {
@@ -57,7 +64,7 @@ nav {
 }
 
 .hero {
-  height: calc(100vh - 50px);
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./assets/imgs/starfalcon.jpg") no-repeat center center/cover;
   display: flex;
@@ -69,4 +76,18 @@ nav {
   font-weight: 100;
   color: var(--waring-color);
   font-size: 4rem;
+}
+
+.columns {
+  background-color: var(--waring-color);
+  display: flex;
+  justify-content: space-around;
+}
+.columns-item {
+  margin: 40px 20px;
+  text-align: center;
+  height: 100%;
+}
+.columns-item p {
+  width: 200px;
 }
