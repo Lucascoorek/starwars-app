@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/layout/Hero";
 import Footer from "./components/layout/Footer";
+import Status from "./components/layout/Status";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Hero} />
-          <Route exact path="/status" component={Hero} />
+          <Route exact path="/status" component={Status} />
         </Switch>
         <Footer />
       </div>

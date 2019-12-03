@@ -66,7 +66,7 @@ nav {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./assets/imgs/starfalcon.jpg") no-repeat center center/cover;
+    url("./assets/imgs/starfalcon.jpg") no-repeat center fixed/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,4 +90,21 @@ nav {
 }
 .columns-item p {
   width: 200px;
+}
+
+footer {
+  background-color: var(--primary-dark);
+  color: var(--waring-color);
+  text-align: center;
+}
+
+.status {
+  height: 100vh;
+  background-color: var(--waring-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status-container {
+  border: 1px solid black;
 }

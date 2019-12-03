@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 const Footer = props => {
   return (
-    <div>
-      <p>hello form footer</p>
-    </div>
+    <footer className="padding">
+      <p className="padding my-1">All rights reserved... or not.</p>
+    </footer>
   );
 };
 
