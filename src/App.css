@@ -16,5 +16,57 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.6em;
-  background: var(--primary-light);
+}
+@font-face {
+  font-family: "star";
+  src: url("./assets/fonts/Starjout.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  color: var(--waring-color);
+  text-decoration: none;
+  transition: 0.2s;
+  border-bottom: 1px solid transparent;
+}
+.btn:hover {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  background: var(--primary-dark);
+}
+.nav-left img {
+  display: block;
+  width: 70px;
+  height: 40px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+.nav-right a {
+  margin-left: 10px;
+}
+
+.hero {
+  height: calc(100vh - 50px);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./assets/imgs/starfalcon.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-family: "star";
+  font-weight: 100;
+  color: var(--waring-color);
+  font-size: 4rem;
 }
