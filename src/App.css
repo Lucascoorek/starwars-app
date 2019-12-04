@@ -2,7 +2,8 @@
   --primary-dark: #034c5b;
   --primary-light: #0a9196;
   --secondary-color: #77b677;
-  --waring-color: #d7c078;
+  --waring-dark: #f9a312;
+  --waring-light: #d7c078;
   --danger-color: #b62321;
 }
 * {
@@ -27,7 +28,7 @@ ul {
   list-style: none;
 }
 .btn {
-  color: var(--waring-color);
+  color: var(--waring-light);
   text-decoration: none;
   transition: 0.2s;
   border-bottom: 1px solid transparent;
@@ -74,12 +75,12 @@ nav {
 .hero h1 {
   font-family: "star";
   font-weight: 100;
-  color: var(--waring-color);
+  color: var(--waring-light);
   font-size: 4rem;
 }
 
 .columns {
-  background-color: var(--waring-color);
+  background-color: var(--waring-light);
   display: flex;
   justify-content: space-around;
 }
@@ -94,17 +95,52 @@ nav {
 
 footer {
   background-color: var(--primary-dark);
-  color: var(--waring-color);
+  color: var(--waring-light);
   text-align: center;
 }
 
 .status {
   height: 100vh;
-  background-color: var(--waring-color);
+  background-color: var(--waring-light);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .status-container {
-  border: 1px solid black;
+  text-align: center;
+}
+.status-image {
+  display: flex;
+}
+
+.status-images {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 15px solid gray;
+  margin: 30px;
+}
+
+.status-image__left {
+  background: url("./assets/imgs/falcon.jpg") no-repeat center center/cover;
+}
+.status-image__right {
+  background: url("./assets/imgs/lightsaber.jpg") no-repeat top left/cover;
+}
+.status-image__green {
+  border-color: var(--secondary-color);
+}
+.status-image__yellow {
+  border-color: var(--waring-dark);
+}
+.status-image__wite {
+  border-color: white;
+}
+.status-values {
+  display: flex;
+  justify-content: space-around;
+}
+#status-total {
+  display: inline-block;
+  width: 28px;
 }
