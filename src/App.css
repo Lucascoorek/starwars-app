@@ -44,6 +44,7 @@ ul {
 .my-1 {
   margin: 20px 0;
 }
+
 nav {
   position: fixed;
   top: 0;
@@ -80,6 +81,13 @@ nav {
   font-weight: 100;
   color: var(--waring-light);
   font-size: 6rem;
+  opacity: 0;
+  animation: 1.5s fadein 1s forwards;
+}
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
 }
 
 .columns {
@@ -125,6 +133,8 @@ footer {
 }
 
 .status-images {
+  opacity: 0;
+  animation: 1.5s fadein 1s forwards;
   width: 350px;
   height: 350px;
   border-radius: 50%;
@@ -134,6 +144,11 @@ footer {
   justify-content: center;
   align-items: center;
   background: var(--light-color);
+}
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
 }
 .status-image img {
   display: block;
@@ -236,6 +251,9 @@ footer {
   .hero {
     background: url("./assets/imgs/falcon-404.jpeg") no-repeat center / cover;
   }
+  .hero h1 {
+    padding-top: 0;
+  }
 }
 @media (max-width: 320px) {
   .status-images {
@@ -246,7 +264,6 @@ footer {
 }
 @media (max-height: 375px) {
   nav {
-    /* flex-direction: row; */
     width: 100%;
   }
   .status-images {
