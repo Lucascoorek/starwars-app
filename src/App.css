@@ -5,6 +5,7 @@
   --waring-dark: #f9a312;
   --waring-light: #d7c078;
   --danger-color: #b62321;
+  --light-color: #dddddd;
 }
 * {
   margin: 0;
@@ -45,6 +46,8 @@ ul {
 }
 nav {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -66,17 +69,17 @@ nav {
 
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./assets/imgs/starfalcon.jpg") no-repeat center fixed/cover;
+  background: url("./assets/imgs/falcon-1920.jpg") no-repeat center fixed/cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .hero h1 {
+  padding-top: 100px;
   font-family: "star";
   font-weight: 100;
   color: var(--waring-light);
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .columns {
@@ -89,8 +92,16 @@ nav {
   text-align: center;
   height: 100%;
 }
-.columns-item p {
+.columns-item i {
+  font-size: 2rem;
+}
+.columns-item q {
+  display: block;
   width: 200px;
+  margin: 20px auto;
+  padding: 0;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
 
 footer {
@@ -119,28 +130,128 @@ footer {
   border-radius: 50%;
   border: 15px solid gray;
   margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-color);
+}
+.status-image img {
+  display: block;
+  width: 70%;
 }
 
-.status-image__left {
-  background: url("./assets/imgs/falcon.jpg") no-repeat center center/cover;
+.status-images_bg {
+  background: var(--waring-dark);
 }
-.status-image__right {
-  background: url("./assets/imgs/lightsaber.jpg") no-repeat top left/cover;
-}
-.status-image__green {
+
+.status-image__border {
   border-color: var(--secondary-color);
 }
-.status-image__yellow {
-  border-color: var(--waring-dark);
-}
-.status-image__wite {
-  border-color: white;
-}
+
 .status-values {
   display: flex;
   justify-content: space-around;
 }
-#status-total {
+.status-number {
   display: inline-block;
   width: 28px;
+}
+
+@media (max-width: 960px) {
+  nav {
+    position: static;
+    width: 100%;
+  }
+  .hero h1 {
+    padding-top: 100px;
+  }
+  .hero h1 span {
+    display: block;
+    margin: 80px;
+    text-align: center;
+  }
+  .status-images {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 801px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-left img {
+    margin: 10px 0;
+    width: 90px;
+    height: 50px;
+  }
+  .nav-right {
+    margin-bottom: 10px;
+  }
+  .hero {
+    height: 100vh;
+    background: url("./assets/imgs/falcon-1024.jpg") no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .status-images {
+    width: 250px;
+    height: 250px;
+  }
+  .columns {
+    flex-direction: column;
+  }
+  .columns-item h2 {
+    margin: 0;
+  }
+  .columns-item q {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 667px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .status-images {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 504px) {
+  .status-images {
+    border-width: 10px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 375px) {
+  .status-images {
+    border-width: 5px;
+    width: 130px;
+    height: 130px;
+  }
+  .hero {
+    background: url("./assets/imgs/falcon-404.jpeg") no-repeat center / cover;
+  }
+}
+@media (max-width: 320px) {
+  .status-images {
+    border-width: 5px;
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-height: 375px) {
+  nav {
+    /* flex-direction: row; */
+    width: 100%;
+  }
+  .status-images {
+    border-width: 5px;
+    width: 130px;
+    height: 130px;
+  }
 }

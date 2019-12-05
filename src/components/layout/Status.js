@@ -1,9 +1,10 @@
-import React, { useContext, useState, useEffect } from "react";
-import PropTypes from "prop-types";
+import React, { useContext, useEffect } from "react";
 import { powerContext } from "../../context/PowerState";
 import toggleState from "../../utils/toggleState";
+import falconPng from "../../assets/imgs/falcon.png";
+import lightsaberPng from "../../assets/imgs/lightsaber.png";
 
-const Status = props => {
+const Status = () => {
   const { falcon, lightsaber, changeData, loadPower } = useContext(
     powerContext
   );
@@ -20,44 +21,43 @@ const Status = props => {
   };
   useEffect(() => {
     loadPower();
+    // eslint-disable-next-line
   }, []);
 
-  let addClassFalcon = "";
-  if (falcon !== 0) {
-    addClassFalcon = "status-images status-image__left status-image__green";
-  } else {
-    addClassFalcon = "status-images status-image__left";
-  }
-  let addClassLightsaber = "";
-  if (lightsaber !== 0) {
-    addClassLightsaber =
-      "status-images status-image__right status-image__green";
-  } else {
-    addClassLightsaber = "status-images status-image__right";
-  }
+  const addClassFalcon = `${
+    falcon !== 0 ? "status-images  status-image__border" : "status-images"
+  } ${falconClass ? "status-images_bg" : ""}`;
+
+  const addClassLightsaber = `${
+    lightsaber !== 0 ? "status-images  status-image__border" : "status-images"
+  } ${lightsaberClass ? "status-images_bg" : ""}`;
 
   return (
     <section className="status">
       <div className="status-container">
-        <h1>
-          TOTAL POWER: <span id="status-total">{falcon + lightsaber}</span> kW
+        <h1 className="my-1">
+          TOTAL POWER:{" "}
+          <span className="status-number">{falcon + lightsaber}</span> kW
         </h1>
         <div className="status-image">
-          <div onClick={handleFalconClick} className={addClassFalcon}></div>
-          <div
-            onClick={handleLightsaberClick}
-            className={addClassLightsaber}
-          ></div>
+          <div onClick={handleFalconClick} className={addClassFalcon}>
+            <img src={falconPng} alt="Millennium Falcon" />
+          </div>
+          <div onClick={handleLightsaberClick} className={addClassLightsaber}>
+            <img src={lightsaberPng} alt="Lightsaber" />
+          </div>
         </div>
         <div className="status-values">
-          <h2>{falcon} kW </h2>
-          <h2>{lightsaber} kW</h2>
+          <h2 className="my-1">
+            <span className="status-number">{falcon}</span> kW{" "}
+          </h2>
+          <h2 className="my-1">
+            <span className="status-number">{lightsaber}</span> kW
+          </h2>
         </div>
       </div>
     </section>
   );
 };
-
-Status.propTypes = {};
 
 export default Status;

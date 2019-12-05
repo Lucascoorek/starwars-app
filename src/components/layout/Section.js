@@ -1,46 +1,27 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-const Section = props => {
+const Section = () => {
   return (
     <section className="columns padding">
       <div className="columns-item ">
-        <h2 className="my-1">
-          <i class="fas fa-jedi"></i> Some title
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, vitae.
-          Provident, soluta quam? Facere, et neque velit placeat vel quod ea
-          voluptatum, itaque sit perferendis earum? Vitae maiores tenetur
-          commodi.
-        </p>
+        <h2 className="my-1">Obi-Wan Kenobi</h2>
+        <i className="fas fa-jedi my-1"></i>
+        <q>
+          Well, if droids could think, there’d be none of us here, would there?
+        </q>
       </div>
       <div className="columns-item">
-        <h2 className="my-1">
-          <i class="fas fa-jedi"></i> Some title
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, vitae.
-          Provident, soluta quam? Facere, et neque velit placeat vel quod ea
-          voluptatum, itaque sit perferendis earum? Vitae maiores tenetur
-          commodi.
-        </p>
+        <h2 className="my-1">Qui-Gon Jinn</h2>
+        <i className="fas fa-jedi my-1"></i>
+        <q>Your focus determines your reality</q>
       </div>
       <div className="columns-item">
-        <h2 className="my-1">
-          <i class="fas fa-jedi"></i> Some title
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, vitae.
-          Provident, soluta quam? Facere, et neque velit placeat vel quod ea
-          voluptatum, itaque sit perferendis earum? Vitae maiores tenetur
-          commodi.
-        </p>
+        <h2 className="my-1">Jango Fett</h2>
+        <i className="fas fa-jedi my-1"></i>
+        <q>I’m just a simple man trying to make my way in the universe.</q>
       </div>
     </section>
   );
 };
-
-Section.propTypes = {};
 
 export default Section;

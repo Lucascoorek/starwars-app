@@ -19,7 +19,7 @@ const PowerState = props => {
     setInterval(async () => {
       const data = await fetchData();
       dispatch({ type: ADD_POWER, payload: data });
-    }, 5000);
+    }, 10000);
   };
   return (
     <powerContext.Provider

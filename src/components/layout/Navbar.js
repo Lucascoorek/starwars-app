@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+
 import logo from "../../assets/imgs/Star_Wars_logo.svg";
 
-const Navbar = props => {
+const Navbar = () => {
   return (
     <nav className="padding">
       <div className="nav-left">
@@ -24,7 +24,5 @@ const Navbar = props => {
     </nav>
   );
 };
-
-Navbar.propTypes = {};
 
 export default Navbar;

@@ -1,18 +1,18 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 import Section from "./Section";
 
-const Hero = props => {
+const Hero = () => {
   return (
     <>
       <section className="hero">
-        <h1>power source</h1>
+        <h1>
+          <span>power</span> <span>source</span>
+        </h1>
       </section>
       <Section />
     </>
   );
 };
-
-Hero.propTypes = {};
 
 export default Hero;
