@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/starwars-app/static/css/main.aa604fef.chunk.css",
+    "main.js": "/starwars-app/static/js/main.fe9832e9.chunk.js",
+    "main.js.map": "/starwars-app/static/js/main.fe9832e9.chunk.js.map",
+    "runtime-main.js": "/starwars-app/static/js/runtime-main.d4781398.js",
+    "runtime-main.js.map": "/starwars-app/static/js/runtime-main.d4781398.js.map",
+    "static/js/2.05720f49.chunk.js": "/starwars-app/static/js/2.05720f49.chunk.js",
+    "static/js/2.05720f49.chunk.js.map": "/starwars-app/static/js/2.05720f49.chunk.js.map",
+    "index.html": "/starwars-app/index.html",
+    "precache-manifest.e869813a49d1e1588be1368b170162dc.js": "/starwars-app/precache-manifest.e869813a49d1e1588be1368b170162dc.js",
+    "service-worker.js": "/starwars-app/service-worker.js",
+    "static/css/main.aa604fef.chunk.css.map": "/starwars-app/static/css/main.aa604fef.chunk.css.map",
+    "static/media/Star_Wars_logo.svg": "/starwars-app/static/media/Star_Wars_logo.c41f740a.svg",
+    "static/media/App.css": "/starwars-app/static/media/falcon-404.859de365.jpeg",
+    "static/media/falcon.png": "/starwars-app/static/media/falcon.50e2f42a.png",
+    "static/media/lightsaber.png": "/starwars-app/static/media/lightsaber.c55d8bed.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4781398.js",
+    "static/js/2.05720f49.chunk.js",
+    "static/css/main.aa604fef.chunk.css",
+    "static/js/main.fe9832e9.chunk.js"
+  ]
+}
