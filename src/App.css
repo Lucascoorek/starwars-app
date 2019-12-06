@@ -156,11 +156,11 @@ footer {
 }
 
 .status-images_bg {
-  background: var(--waring-dark);
+  background: var(--waring-light);
 }
 
 .status-image__border {
-  border-color: var(--secondary-color);
+  border-color: var(--primary-dark);
 }
 
 .status-values {

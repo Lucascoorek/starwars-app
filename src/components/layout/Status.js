@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { powerContext } from "../../context/PowerState";
 import toggleState from "../../utils/toggleState";
 import falconPng from "../../assets/imgs/falcon.png";
-import lightsaberPng from "../../assets/imgs/lightsaber.png";
+import lightsaberPng from "../../assets/imgs/lightsaber.svg";
 
 const Status = () => {
   const { falcon, lightsaber, changeData, loadPower } = useContext(
