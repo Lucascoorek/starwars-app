@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c330f03fe84e4c1ca148d060002fdab6",
+    "revision": "51dbc05e37f70a4b7a81b24779d8c5da",
     "url": "/starwars-app/index.html"
   },
   {
-    "revision": "c7f19edc45ad1f673ce1",
-    "url": "/starwars-app/static/css/main.aa604fef.chunk.css"
+    "revision": "928641b9048d342386a6",
+    "url": "/starwars-app/static/css/main.4a8f7c43.chunk.css"
   },
   {
     "revision": "db4554f1d10947ea0495",
     "url": "/starwars-app/static/js/2.f4ff98c6.chunk.js"
   },
   {
-    "revision": "c7f19edc45ad1f673ce1",
-    "url": "/starwars-app/static/js/main.01cdf021.chunk.js"
+    "revision": "928641b9048d342386a6",
+    "url": "/starwars-app/static/js/main.13e27d71.chunk.js"
   },
   {
     "revision": "e59135bf2d8b288ef9c5",
@@ -44,7 +44,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/starwars-app/static/media/falcon.50e2f42a.png"
   },
   {
-    "revision": "c55d8bed23354f6c16e36981cda8999b",
-    "url": "/starwars-app/static/media/lightsaber.c55d8bed.png"
+    "revision": "7c5a6f87bfac9aefd3846db6636a50b9",
+    "url": "/starwars-app/static/media/lightsaber.7c5a6f87.svg"
   }
 ]);
