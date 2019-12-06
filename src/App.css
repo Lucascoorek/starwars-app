@@ -53,7 +53,6 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
   background: var(--primary-dark);
 }
 .nav-left img {
@@ -78,6 +77,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .hero h1 {
   padding-top: 100px;
@@ -87,6 +87,7 @@ nav {
   font-size: 6rem;
   opacity: 0;
   animation: 1.5s fadein 1s forwards;
+  overflow: hidden;
 }
 @keyframes fadein {
   100% {
