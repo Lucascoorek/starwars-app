@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "51dbc05e37f70a4b7a81b24779d8c5da",
+    "revision": "2e77d519bf5f177f9d12f4e0bb0e21c6",
     "url": "/starwars-app/index.html"
   },
   {
-    "revision": "928641b9048d342386a6",
-    "url": "/starwars-app/static/css/main.4a8f7c43.chunk.css"
+    "revision": "2b16b5d5126daaf3c69e",
+    "url": "/starwars-app/static/css/main.19f54e1d.chunk.css"
   },
   {
-    "revision": "db4554f1d10947ea0495",
-    "url": "/starwars-app/static/js/2.f4ff98c6.chunk.js"
+    "revision": "bfd0e4ec4446fa95fd4c",
+    "url": "/starwars-app/static/js/2.518cec30.chunk.js"
   },
   {
-    "revision": "928641b9048d342386a6",
-    "url": "/starwars-app/static/js/main.13e27d71.chunk.js"
+    "revision": "2b16b5d5126daaf3c69e",
+    "url": "/starwars-app/static/js/main.f0c86f18.chunk.js"
   },
   {
     "revision": "e59135bf2d8b288ef9c5",
