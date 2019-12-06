@@ -10,7 +10,7 @@ import PowerState from "./context/PowerState";
 function App() {
   return (
     <PowerState>
-      <Router>
+      <Router basename="/">
         <div>
           <Navbar />
           <Switch>
