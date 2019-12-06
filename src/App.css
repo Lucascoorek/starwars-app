@@ -87,7 +87,6 @@ nav {
   font-size: 6rem;
   opacity: 0;
   animation: 1.5s fadein 1s forwards;
-  /* overflow: hidden; */
 }
 @keyframes fadein {
   100% {
