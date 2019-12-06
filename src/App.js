@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/layout/Hero";
@@ -10,7 +10,7 @@ import PowerState from "./context/PowerState";
 function App() {
   return (
     <PowerState>
-      <Router basename="/">
+      <HashRouter basename="/">
         <div>
           <Navbar />
           <Switch>
@@ -19,7 +19,7 @@ function App() {
           </Switch>
           <Footer />
         </div>
-      </Router>
+      </HashRouter>
     </PowerState>
   );
 }
