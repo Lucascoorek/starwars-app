@@ -303,6 +303,6 @@ footer {
     justify-content: flex-start;
   }
   .hero-arrow {
-    bottom: 210px;
+    visibility: hidden;
   }
 }
